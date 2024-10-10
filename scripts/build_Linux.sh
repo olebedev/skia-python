@@ -62,6 +62,7 @@ git clone https://gn.googlesource.com/gn && \
 cd skia && \
     patch -p1 < ../patch/skia-m130-minimize-download.patch && \
     patch -p1 < ../patch/skia-m123-colrv1-freetype.diff && \
+    patch -p1 < ../patch/renderer-specific-skia-build-options.patch && \
     python3 tools/git-sync-deps && \
     cp -f ../gn/out/gn bin/gn && \
     bin/gn gen out/Release --args="
