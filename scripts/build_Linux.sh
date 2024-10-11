@@ -59,6 +59,7 @@ git clone https://gn.googlesource.com/gn && \
     cd ..
 
 # Build skia
+echo "Patching and building Skia..."
 cd skia && \
     patch -p1 < ../patch/skia-m130-minimize-download.patch && \
     patch -p1 < ../patch/skia-m123-colrv1-freetype.diff && \
